@@ -1,7 +1,7 @@
 import pika, os
 
 # Acesso a CLODUAMQP_URL and variables
-url = os.environ.get('CLOUDAMQP_URL', 'amqps://tkxuljpc:7Irana2gy1_NfRSHCRP2mH1zuIljm1Ih@jaragua.lmq.cloudamqp.com/tkxuljpc')
+url = os.environ.get('CLOUDAMQP_URL', '')
 params = pika.URLParameters(url)
 connection = pika.BlockingConnection(params)
 channel = connection.channel()
